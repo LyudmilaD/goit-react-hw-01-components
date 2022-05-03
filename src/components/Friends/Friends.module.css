@@ -1,0 +1,34 @@
+.list {
+  display: flex;
+  margin-top: 200px;
+}
+
+.item {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.green {
+  display: block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: green;
+}
+
+.red {
+  display: block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+}
