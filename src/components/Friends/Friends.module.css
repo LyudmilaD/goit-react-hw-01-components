@@ -1,34 +1,40 @@
 .list {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .item {
   list-style: none;
   margin-right: 40px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 13px;
 }
 
-.green {
+.statusOnline,
+.statusOffline {
   display: block;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: green;
+  margin: 0 10px 0 10px;
 }
 
-.red {
-  display: block;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: red;
+.statusOnline {
+  background-color: green;
+}
+
+.statusOffline {
+  background-color: red;
 }
 
 .avatar {
-  display: block;
-  width: 100%;
+  /* display: block; */
+  width: 70%;
 }
 
 .name {
+  font-size: 28px;
+  color: rgb(95, 130, 160);
   text-align: center;
+  font-weight: bold;
 }
