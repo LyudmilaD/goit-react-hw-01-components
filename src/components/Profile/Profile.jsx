@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from "./Profile.module.css"
+
 export function Profile({ avatar, username, tag, location, stats }) {
   const {views, followers, likes}=stats
     return (
