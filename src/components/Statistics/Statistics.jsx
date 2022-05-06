@@ -24,20 +24,13 @@ export function Statistics({title, data}) {
     );
 }
 Statistics.propTypes = {
-    data: PropTypes.array.isRequired,
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+         id:PropTypes.string.isRequired,
+         label:PropTypes.string.isRequired,
+         percentage:PropTypes.number.isRequired,
+        }),
+    ),
     title:PropTypes.string
 }
-export function StatItem({label,percentage}) {
-    return (
-        <li className={s.item} >
-      <span className={s.label}>{label}</span>
-      <span className={s.percentage}>{percentage}</span>
-    </li>
-    )
-}
 
-StatItem.propTypes = {
-    id:PropTypes.string,
-    label: PropTypes.string.isRequired,
-    percentage:PropTypes.number.isRequired
-}
